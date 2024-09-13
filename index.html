@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mapa de Procesos SERVIU</title>
+        <!-- Enlaces a los archivos CSS -->
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/estrategico.css">
+        <link rel="stylesheet" href="css/operacional.css">
+        <link rel="stylesheet" href="css/soporte.css">
+    </head>
+<body>
+
+    <!-- Título principal -->
+    <h1 id="main-title">Mapa de Procesos SERVIU</h1>
+
+    <!-- Nivel 0 (Inicio) -->
+    <div id="nivel0">
+        <div class="box estrategico" data-group="estrategico">Procesos Estratégicos</div>
+        <div class="box operacional" data-group="operacional">Procesos Operacionales</div>
+        <div class="box soporte" data-group="soporte">Procesos de Soporte</div>
+    </div>
+
+    <!-- Contenedor dinámico para cargar niveles -->
+    <div id="level-container"></div>
+
+    <!-- Enlazar al archivo de script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

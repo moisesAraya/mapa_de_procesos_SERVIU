@@ -1,0 +1,95 @@
+/* Nivel 1: Subniveles de Procesos de Soporte */
+.soporte-nivel1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.soporte-nivel1 .box {
+    background-color: #27ae60; /* Color pastel dentro de la paleta verde */
+    width: calc(33.33% - 20px);
+    max-width: 300px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    border-radius: 15px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    flex: 1 1 auto;
+}
+
+.soporte-nivel1 .box:hover {
+    transform: scale(1.05);
+}
+
+/* Nivel 2: Subniveles de Procesos de Soporte */
+.soporte-nivel2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.soporte-nivel2 .box {
+    background-color: #58d68d; /* Color suave para el nivel 2 */
+    width: 250px;
+    max-width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.soporte-nivel2 .box:hover {
+    transform: scale(1.05);
+}
+
+/* Adaptación de color para el botón de inicio */
+button.bg-green {
+    background-color: #2ecc71;
+}
+
+button.bg-green:hover {
+    background-color: #27ae60;
+}
+
+.soporte-nivel3 .box {
+    background-color: transparent; /* Fondo transparente */
+    width: 250px;
+    max-width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid #2ecc71; /* Borde del color más intenso (verde) para soporte */
+    color: black; /* Letras negras */
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.soporte-nivel3 .box:hover {
+    transform: scale(1.05);
+}
+
+/* Botones de navegación en el nivel 3 */
+.soporte-nivel3 .button-container {
+    display: flex;
+    justify-content: center; /* Centramos los botones */
+    gap: 15px; /* Espacio entre los botones */
+}

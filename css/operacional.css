@@ -1,0 +1,96 @@
+/* Nivel 1: Subniveles de Procesos Operacionales */
+.operacional-nivel1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.operacional-nivel1 .box {
+    background-color: #3498db; /* Color pastel dentro de la paleta azul */
+    width: calc(33.33% - 20px); /* Asegurarse de que siempre haya 3 *boxes* por fila */
+    max-width: 300px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    border-radius: 15px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(33.33% - 20px); /* Este ajuste asegura que 3 boxes estén en cada fila */
+}
+
+.operacional-nivel1 .box:hover {
+    transform: scale(1.05);
+}
+
+/* Nivel 2: Subniveles de Procesos Operacionales */
+.operacional-nivel2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.operacional-nivel2 .box {
+    background-color: #85c1e9; /* Color suave para el nivel 2 */
+    width: calc(33.33% - 20px); /* Ajuste para organizar 3 *boxes* por fila */
+    max-width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(33.33% - 20px); /* Forzamos que cada box ocupe un tercio del espacio */
+}
+
+.operacional-nivel2 .box:hover {
+    transform: scale(1.05);
+}
+
+/* Nivel 3: Subniveles más profundos de Gestión Operacional */
+.operacional-nivel3 {
+    display: flex;
+    flex-wrap: wrap; /* Organización en filas */
+    justify-content: center; /* Centrar las boxes */
+    gap: 20px;
+    padding: 20px;
+}
+
+.operacional-nivel3 .box {
+    background-color: transparent; /* Fondo transparente */
+    width: 250px;
+    max-width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid #3498db; /* Borde del color más intenso (azul) */
+    color: black; /* Letras negras */
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.operacional-nivel3 .box:hover {
+    transform: scale(1.05);
+}
+
+/* Botones de navegación en el nivel 3 */
+.operacional-nivel3 .button-container {
+    display: flex;
+    justify-content: center; /* Centramos los botones */
+    gap: 15px; /* Espacio entre los botones */
+}

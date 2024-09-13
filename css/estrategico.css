@@ -1,0 +1,110 @@
+/* Nivel 0: Procesos Estratégicos */
+#nivel0 .estrategico {
+    background-color: #e74c3c; /* Rojo */
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#nivel0 .estrategico:hover {
+    transform: scale(1.05);
+}
+
+/* Nivel 1: Subniveles de Procesos Estratégicos */
+.estrategico-nivel1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.estrategico-nivel1 .box {
+    background-color: #f56b41; /* Color pastel dentro de la paleta roja */
+    flex: 1 1 calc(30% - 20px); /* Ajuste para que se distribuyan 3 por fila */
+    max-width: 300px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    border-radius: 15px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    flex: 1 1 auto;
+}
+
+.estrategico-nivel1 .box:hover {
+    transform: scale(1.05);
+}
+
+/* Nivel 2: Subniveles más profundos de Gestión Estratégica */
+.estrategico-nivel2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.estrategico-nivel2 .box {
+    background-color: #f1948a; /* Color más suave para el nivel 2 */
+    flex: 1 1 calc(50% - 20px); /* Ajuste para que se distribuyan 2 por fila */
+    max-width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Nivel 3: Subniveles más profundos de Gestión Estratégica */
+.estrategico-nivel3 {
+    display: flex;
+    flex-wrap: wrap; /* Organización en filas */
+    justify-content: center; /* Centrar las boxes */
+    gap: 20px;
+    padding: 20px;
+}
+
+.estrategico-nivel3 .box {
+    background-color: transparent; /* Fondo transparente */
+    width: 250px;
+    max-width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid #e74c3c; /* Borde del color más intenso */
+    color: black; /* Letras negras */
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.estrategico-nivel3 .box:hover {
+    transform: scale(1.05);
+}
+
+/* Botones de navegación en el nivel 3 */
+.estrategico-nivel3 .button-container {
+    display: flex;
+    justify-content: center; /* Centramos los botones */
+    gap: 15px; /* Espacio entre los botones */
+}
