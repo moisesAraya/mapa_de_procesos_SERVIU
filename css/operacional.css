@@ -38,7 +38,7 @@
 }
 
 .operacional-nivel2 .box {
-    background-color: #85c1e9; /* Color suave para el nivel 2 */
+    background-color: #50adeb; /* Color suave para el nivel 2 */
     width: calc(33.33% - 20px); /* Ajuste para organizar 3 *boxes* por fila */
     max-width: 300px;
     height: 100px;
@@ -94,3 +94,5 @@
     justify-content: center; /* Centramos los botones */
     gap: 15px; /* Espacio entre los botones */
 }
+
+

@@ -9,11 +9,13 @@
         <link rel="stylesheet" href="css/estrategico.css">
         <link rel="stylesheet" href="css/operacional.css">
         <link rel="stylesheet" href="css/soporte.css">
+        <!-- Enlace a la librería de iconos (FontAwesome) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
 <body>
 
     <!-- Título principal -->
-    <h1 id="main-title">Mapa de Procesos SERVIU</h1>
+    <h1 id="nivel0-tittle">Mapa de Procesos SERVIU</h1>
 
     <!-- Nivel 0 (Inicio) -->
     <div id="nivel0">
@@ -24,6 +26,12 @@
 
     <!-- Contenedor dinámico para cargar niveles -->
     <div id="level-container"></div>
+
+    <!-- Iconos de navegación, ocultos inicialmente -->
+    <div id="navigation-icons" style="display:none;">
+        <i id="back-button" class="fas fa-arrow-left"></i>
+        <i id="home-button" class="fas fa-home"></i>
+    </div>
 
     <!-- Enlazar al archivo de script -->
     <script src="js/script.js"></script>

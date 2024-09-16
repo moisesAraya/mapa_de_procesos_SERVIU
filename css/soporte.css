@@ -38,7 +38,7 @@
 }
 
 .soporte-nivel2 .box {
-    background-color: #58d68d; /* Color suave para el nivel 2 */
+    background-color: #63b384; /* Color suave para el nivel 2 */
     width: 250px;
     max-width: 300px;
     height: 100px;
@@ -66,6 +66,15 @@ button.bg-green:hover {
     background-color: #27ae60;
 }
 
+/* Nivel 3: Subniveles más profundos de Gestión Estratégica */
+.soporte-nivel3 {
+    display: flex;
+    flex-wrap: wrap; /* Organización en filas */
+    justify-content: center; /* Centrar las boxes */
+    gap: 20px;
+    padding: 20px;
+}
+
 .soporte-nivel3 .box {
     background-color: transparent; /* Fondo transparente */
     width: 250px;
@@ -76,7 +85,7 @@ button.bg-green:hover {
     align-items: center;
     text-align: center;
     font-size: 16px;
-    border: 2px solid #2ecc71; /* Borde del color más intenso (verde) para soporte */
+    border: 2px solid #2ecc71; /* Borde del color más intenso */
     color: black; /* Letras negras */
     border-radius: 10px;
     margin: 10px;
