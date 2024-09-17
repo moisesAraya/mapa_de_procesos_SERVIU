@@ -40,7 +40,6 @@ h2, h3 {
     letter-spacing: 1px;
 }
 
-
 h2 {
     font-size: 36px;
 }
@@ -207,36 +206,50 @@ h3 {
         right: 10px;
         font-size: 18px;  /* Ajustar tamaño de íconos en móviles */
     }
+
+    #nivel0 {
+        gap: 10px;  /* Reducir el espacio entre los recuadros */
+        margin-top: 20px;  /* Reducir el espacio superior */
+    }
+
+    .box {
+        width: 100%;  /* Hacer que los recuadros ocupen todo el ancho de la pantalla */
+        font-size: 16px;  /* Reducir el tamaño del texto */
+        padding: 10px;
+    }
 }
 
 @media (max-width: 480px) {
-
-
-    @media (max-width: 768px) {
-        body {
-            padding: 0;  /* Eliminar cualquier relleno innecesario en pantallas pequeñas */
-            margin: 0;
-        }
-    
-        #nivel0 {
-            gap: 10px;  /* Reducir el espacio entre los recuadros */
-            margin-top: 20px;  /* Reducir el espacio superior */
-        }
-    
-        .box {
-            width: 100%;  /* Hacer que los recuadros ocupen todo el ancho de la pantalla */
-            font-size: 16px;  /* Reducir el tamaño del texto */
-            padding: 10px;
-        }
-    
-        h2, h3 {
-            font-size: 16px;  /* Reducir el tamaño de los títulos */
-            margin-top: 40px;  /* Reducir el margen superior de los títulos */
-        }
+    body {
+        padding: 0;
+        margin: 0;
     }
-    
 
+    #nivel0 {
+        gap: 5px;  /* Aún menos espacio entre los recuadros */
+        margin-top: 5px;  /* Reducir el margen superior */
+    }
+
+    #nivel0 .box {
+        width: calc(100% - 10px);  /* Usar el ancho completo */
+        font-size: 12px;  /* Reducir más el tamaño del texto */
+        padding: 8px;  /* Reducir el padding */
+    }
+
+    #navigation-icons {
+        top: 5px;
+        right: 5px;
+    }
+
+    #back-button, #home-button {
+        font-size: 1.5rem;  /* Ajustar aún más el tamaño de los iconos */
+    }
+
+    #logo-serviu {
+        width: 30px;  /* Hacer el logo más pequeño en pantallas muy pequeñas */
+    }
 }
+
 #logo-serviu {
     position: fixed;  /* Fija el logo en su lugar mientras navegas */
     top: 20px;  /* Colócalo en la parte superior */
