@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const group = element.dataset.group; // Obtener el grupo (estrategico, operacional, soporte)
             console.log(`Cargando nivel 1 para el grupo: ${group}`);
             loadLevel(group, 'nivel1', `html/nivel1/${group}-nivel1.html`); // Cargar el nivel 1 del grupo seleccionado
-            toggleNavigationIcons(true, group); // Mostrar los iconos de navegación (flecha y casa) y pasar el grupo
+            toggleNavigationIcons(true, group); // Mostrar los íconos de navegación (flecha y casa) y pasar el grupo
         });
     });
 
@@ -31,7 +31,6 @@ function toggleTitle(show) {
         titleElement.style.display = 'none';  // Ocultar el título en otros niveles
     }
 }
-
 
 // Función general para manejar el botón de volver
 function handleBackButton() {
@@ -87,6 +86,9 @@ function loadLevel(group, level, filePath) {
 
     if (level === 'nivel1') {
         document.getElementById('nivel0').style.display = 'none'; // Ocultar el nivel 0
+        toggleTitle(false);  // Ocultar el h1 en niveles 1, 2 y 3
+    } else if (level === 'nivel0') {
+        toggleTitle(true);  // Mostrar el h1 en nivel 0
     }
 
     fetch(filePath)
@@ -125,6 +127,7 @@ function handleLevel1Click(group) {
 function goBackToLevel0() {
     document.getElementById('level-container').innerHTML = ''; // Limpiar el contenedor
     document.getElementById('nivel0').style.display = 'flex'; // Mostrar el nivel 0 nuevamente
+    toggleTitle(true);  // Mostrar el h1 en nivel 0
     toggleNavigationIcons(false); // Ocultar los íconos en el nivel 0
 }
 

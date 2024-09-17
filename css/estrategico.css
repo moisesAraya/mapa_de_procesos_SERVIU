@@ -38,7 +38,7 @@
 }
 
 .estrategico-nivel2 .box {
-    background-color: #d35400; /* Color más suave para el nivel 2 */
+    background-color: #f09c6b; /* Color más suave para el nivel 2 */
     flex: 1 1 calc(50% - 20px); /* Ajuste para que se distribuyan 2 por fila */
     max-width: 300px;
     height: 100px;
