@@ -212,13 +212,29 @@ h3 {
 @media (max-width: 480px) {
 
 
-@media (max-width: 480px) {
-    #nivel0 .box {
-        width: 100%;
-        height: auto;
-        font-size: 16px;
+    @media (max-width: 768px) {
+        body {
+            padding: 0;  /* Eliminar cualquier relleno innecesario en pantallas pequeñas */
+            margin: 0;
+        }
+    
+        #nivel0 {
+            gap: 10px;  /* Reducir el espacio entre los recuadros */
+            margin-top: 20px;  /* Reducir el espacio superior */
+        }
+    
+        .box {
+            width: 100%;  /* Hacer que los recuadros ocupen todo el ancho de la pantalla */
+            font-size: 16px;  /* Reducir el tamaño del texto */
+            padding: 10px;
+        }
+    
+        h2, h3 {
+            font-size: 16px;  /* Reducir el tamaño de los títulos */
+            margin-top: 40px;  /* Reducir el margen superior de los títulos */
+        }
     }
-}
+    
 
 }
 #logo-serviu {
