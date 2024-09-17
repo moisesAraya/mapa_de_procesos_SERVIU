@@ -241,3 +241,9 @@ function toggleNavigationIcons(show, group = null) {
         icons.style.display = 'none'; // Ocultar los íconos
     }
 }
+
+// Función para redirigir al hacer clic en el logo del Serviu y abrir en una nueva pestaña
+document.getElementById('logo-serviu').addEventListener('click', function() {
+    window.open('https://www.serviubiobio.cl/', '_blank');
+});
+
