@@ -240,7 +240,7 @@ h3 {
 #logo-serviu {
     position: fixed;  /* Fija el logo en su lugar mientras navegas */
     top: 20px;  /* Colócalo en la parte superior */
-    right: 20px;  /* Alinearlo a la derecha */
+    right: 90px;  /* Alinearlo a la derecha */
     width: 100px;  /* Ajusta el tamaño del logo */
     height: max-content;  /* Mantiene la proporción de la imagen */
     z-index: 1000;  /* Asegura que esté por encima del contenido */
