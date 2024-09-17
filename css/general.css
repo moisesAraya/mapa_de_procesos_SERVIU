@@ -1,7 +1,7 @@
-/* Estilos generales para todas las versiones */
+/* Estilos generales */
 body {
     font-family: 'Lato', sans-serif;
-    background: linear-gradient(135deg, #f3f4f7 0%, #e5e7eb 100%);
+    background: linear-gradient(135deg, #f3f4f7 0%, #e5e7eb 100%); /* Fondo con un degradado suave */
     color: #333;
     margin: 0;
     padding: 0;
@@ -12,22 +12,26 @@ body {
     min-height: 100vh;
 }
 
-/* Título principal */
+/* Título principal (h1) visible en el nivel 0 */
 #nivel0-title {
     display: flex;
-    font-size: 50px;  /* Mantener tamaño grande en escritorio */
+    font-size: 50px;
     color: #1a1a1a;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 30px;
-    text-align: center;
+    text-align: center; /* Centramos el título */
+    transition: transform 0.3s ease;
 }
 
-/* Títulos h2 y h3 */
+#nivel0-title:hover {
+    transform: scale(1.03); /* Efecto de agrandamiento al hacer hover */
+}
+
 h2, h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;  /* Cambiar la tipografía */
     color: #444;
     font-weight: 600;
     text-transform: capitalize;
@@ -37,11 +41,11 @@ h2, h3 {
 }
 
 h2 {
-    font-size: 36px;  /* Tamaño grande en escritorio */
+    font-size: 36px;
 }
 
 h3 {
-    font-size: 28px;  /* Tamaño grande en escritorio */
+    font-size: 28px;
 }
 
 /* Contenedor de Nivel 0 */
@@ -55,32 +59,31 @@ h3 {
     width: 100%;
 }
 
-/* Diseño de los recuadros */
+/* Diseño de las boxes del nivel 0 */
 #nivel0 .box {
     width: 280px;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.2rem;  /* Ajuste del tamaño del texto */
     font-weight: 600;
     color: white;
     border-radius: 18px;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombras más profundas para dar un efecto 3D */
     cursor: pointer;
     padding: 15px;
     text-align: center;
-    background: linear-gradient(135deg, #f3f4f7, #e5e7eb);
-    word-wrap: break-word;
-    white-space: normal;
-    margin-bottom: 20px;
+    background: linear-gradient(135deg, #f3f4f7, #e5e7eb); /* Degradado suave */
+    word-wrap: break-word;  /* Evita que el texto sobresalga */
+    white-space: normal;  /* Permitir que el texto se divida en varias líneas */
 }
 
 #nivel0 .box:hover {
     transform: scale(1.1);
     filter: brightness(1.15);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Efecto de agrandamiento en hover */
 }
 
 /* Colores por tipo de proceso */
@@ -96,33 +99,40 @@ h3 {
     background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
 }
 
-/* Estilos del logo */
-#logo-serviu {
-    position: fixed;
-    top: 20px;
-    right: 20px;  /* Mover el logo a la esquina derecha */
-    width: 100px;
-    height: auto;
-    z-index: 1000;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Subtítulos dinámicos */
+#sub-title {
+    font-size: 30px;
+    color: #555;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    font-weight: normal;
+    letter-spacing: 1px;
+    border-bottom: 3px solid currentColor;
+    display: none;
 }
 
-#logo-serviu:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+.visible {
+    display: block !important;
+}
+
+/* Nivel 1: Subniveles */
+.estrategico-nivel1, .operacional-nivel1, .soporte-nivel1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
 }
 
 /* Estilos para los iconos de navegación */
 #navigation-icons {
     position: fixed;
     top: 20px;
-    left: 20px;  /* Mover los iconos a la izquierda */
+    width: 100%;
     display: flex;
-    justify-content: flex-start;  /* Alinearlos a la izquierda */
-    gap: 10px;
-    z-index: 999;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 999;  /* Asegura que los íconos estén siempre por encima */
 }
 
 #back-button, #home-button {
@@ -132,52 +142,130 @@ h3 {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-#back-button:hover, #home-button:hover {
-    transform: scale(1.1);
+.estrategico-color #back-button, .estrategico-color #home-button {
+    color: #c0392b;
 }
 
-/* === Estilos específicos para móviles === */
+.operacional-color #back-button, .operacional-color #home-button {
+    color: #2980b9;
+}
+
+.soporte-color #back-button, .soporte-color #home-button {
+    color: #27ae60;
+}
+
+#back-button:hover, #home-button:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Ajustar la posición del icono de flecha */
+#back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+/* Ajustar la posición del icono de casa */
+#home-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+/* Contenedor central mejor distribuido */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* Ajustes para móviles */
 @media (max-width: 768px) {
-
-    /* Ajustar el tamaño de los títulos en móvil */
-    #nivel0-title {
-        font-size: 36px;  /* Reducir tamaño del h1 en móvil */
-        margin-bottom: 20px;
+    h2 {
+        font-size: 18px;  /* Reducir tamaño del h2 */
+        margin-top: 80px;  /* Aumentar el margen superior para evitar superposición */
     }
 
-    h2, h3 {
-        font-size: 18px;  /* Reducir tamaño de los títulos en móvil */
-        margin: 5px 15px;
+    h3 {
+        font-size: 16px;  /* Reducir tamaño del h3 */
+        margin-top: 60px;  /* Aumentar el margen superior en h3 */
     }
 
-    /* Ajustes en el contenedor */
-    #nivel0 {
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    /* Ajustes en los recuadros */
     #nivel0 .box {
-        width: 100%;
-        font-size: 0.9rem;
+        font-size: 1rem;  /* Ajustar tamaño de texto en móviles */
         padding: 10px;
-        margin-bottom: 10px;
     }
 
-    /* Ajustar el logo en móvil */
-    #logo-serviu {
-        width: 30px;  /* Hacer el logo más pequeño */
-        right: 5px;
-        top: 5px;
+    #navigation-icons {
+        top: 10px;
+        right: 10px;
+        font-size: 18px;  /* Ajustar tamaño de íconos en móviles */
     }
 
-    /* Ajustes en los iconos de navegación */
+    #nivel0 {
+        gap: 10px;  /* Reducir el espacio entre los recuadros */
+        margin-top: 20px;  /* Reducir el espacio superior */
+    }
+
+    .box {
+        width: 100%;  /* Hacer que los recuadros ocupen todo el ancho de la pantalla */
+        font-size: 16px;  /* Reducir el tamaño del texto */
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    #nivel0 {
+        gap: 5px;  /* Aún menos espacio entre los recuadros */
+        margin-top: 5px;  /* Reducir el margen superior */
+    }
+
+    #nivel0 .box {
+        width: calc(100% - 10px);  /* Usar el ancho completo */
+        font-size: 12px;  /* Reducir más el tamaño del texto */
+        padding: 8px;  /* Reducir el padding */
+    }
+
     #navigation-icons {
         top: 5px;
-        left: 5px;  /* Mantener los iconos alineados a la izquierda */
+        right: 5px;
     }
 
     #back-button, #home-button {
-        font-size: 1.8rem;  /* Tamaño más pequeño de iconos en móvil */
+        font-size: 1.5rem;  /* Ajustar aún más el tamaño de los iconos */
     }
+
+    #logo-serviu {
+        width: 30px;  /* Hacer el logo más pequeño en pantallas muy pequeñas */
+    }
+}
+
+#logo-serviu {
+    position: fixed;  /* Fija el logo en su lugar mientras navegas */
+    top: 20px;  /* Colócalo en la parte superior */
+    right: 90px;  /* Alinearlo a la derecha */
+    width: 100px;  /* Ajusta el tamaño del logo */
+    height: max-content;  /* Mantiene la proporción de la imagen */
+    z-index: 1000;  /* Asegura que esté por encima del contenido */
+    
+    /* Estilo adicional */
+    border-radius: 10px;  /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Efecto de transición */
+}
+
+/* Efecto hover */
+#logo-serviu:hover {
+    transform: scale(1.1);  /* Agranda el logo al pasar el cursor */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);  /* Aumenta la sombra */
 }
