@@ -188,8 +188,8 @@ h3 {
 #logo-serviu {
     position: absolute;  /* Cambiado a absolute para mayor flexibilidad */
     top: 20px;
-    right: 60px; /* Ajustar la posición del logo en escritorio */
-    width: 80px; /* Ajustar tamaño del logo en escritorio */
+    right: 90px; /* Ajustar la posición del logo en escritorio */
+    width: 100px; /* Ajustar tamaño del logo en escritorio */
     height: auto;
     z-index: 1000;
     border-radius: 10px;
